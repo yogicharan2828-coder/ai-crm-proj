@@ -7,7 +7,8 @@ import InteractionForm from "./components/InteractionForm";
 import AIResponse from "./components/AIResponse";
 import History from "./components/History";
 import ChatInterface from "./components/ChatInterface";
-import Footer from "./components/Footer";
+import Footer from "./components/footer";
+
 
 export default function App() {
   const [refreshKey, setRefreshKey] = useState(0);
