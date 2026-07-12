@@ -1,0 +1,200 @@
+🏥 AI-First Healthcare CRM Platform
+
+AI-First Healthcare CRM is a modern full-stack Customer Relationship Management (CRM) platform built for Medical Representatives to efficiently manage Healthcare Professionals (HCPs). The platform leverages Artificial Intelligence to automate doctor interaction summaries, generate professional follow-up emails, recommend next actions, prioritize interactions, and provide an intelligent CRM assistant for enhanced productivity.
+🚀 Live Demo
+
+Frontend:
+https://ai-crmproj.netlify.app/
+
+Backend API:
+https://ai-crm-proj.onrender.com/
+
+API Documentation:
+https://ai-crm-proj.onrender.com/docs
+
+📌 Features
+
+Doctor Interaction Management
+Log Doctor Visits
+Store HCP Information
+Track Interaction History
+Follow-up Date Management
+Persistent PostgreSQL Database
+AI-Powered CRM Assistant
+Interactive AI Chatbot
+CRM Data-Based Question Answering
+Doctor Information Retrieval
+Intelligent Healthcare Assistance
+AI Automation
+AI Interaction Summary Generation
+Professional Follow-up Email Generation
+AI Recommended Next Action
+Automatic Priority Detection
+Structured AI Responses
+Dashboard & Analytics
+Total Doctor Interactions
+Dashboard Statistics
+Recent Activity Tracking
+CRM Performance Overview
+Responsive Design
+Fully Responsive Interface
+Mobile-Friendly Design
+Modern Glassmorphism UI
+Smooth User Experience
+
+🛠️ Tech Stack
+Frontend
+React.js
+Vite
+Tailwind CSS v4
+Redux Toolkit
+Axios
+React Markdown
+Lucide React
+Backend
+Python
+FastAPI
+LangGraph
+LangChain
+Groq LLM
+SQLAlchemy
+Pydantic
+Database
+PostgreSQL
+Deployment & Tools
+Git
+GitHub
+VS Code
+Netlify
+Render
+Render PostgreSQL
+
+📂 Project Structure
+AI-CRM-PROJ/
+
+│
+
+├── frontend/
+
+│   ├── src/
+
+│   ├── components/
+
+│   ├── redux/
+
+│   ├── services/
+
+│   └── assets/
+
+│
+
+├── backend/
+
+│   ├── app/
+
+│   ├── api/
+
+│   ├── agents/
+
+│   ├── database/
+
+│   ├── models/
+
+│   ├── schemas/
+
+│   ├── services/
+
+│   └── main.py
+
+│
+
+└── README.md
+
+🔍 How It Works
+Medical Representative logs a doctor interaction.
+Interaction details are securely stored in PostgreSQL.
+AI processes the interaction using LangGraph and Groq LLM.
+AI generates:
+Professional Interaction Summary
+Follow-up Email
+Recommended Next Action
+Priority Level
+Dashboard updates in real time.
+AI CRM Assistant answers CRM-related queries using stored database information.
+
+⚙️ Installation
+Clone the repository
+git clone https://github.com/yourusername/AI-CRM-PROJ.git
+
+Navigate to the project directory
+
+cd AI-CRM-PROJ
+Backend Setup
+cd backend
+
+python -m venv venv
+
+venv\Scripts\activate
+
+pip install -r requirements.txt
+
+uvicorn app.main:app --reload
+Frontend Setup
+cd ../frontend
+
+npm install
+
+npm run dev
+
+Open in your browser
+
+http://localhost:5173
+
+🔑 Environment Variables
+
+Create a .env file inside the backend folder.
+
+DATABASE_URL=your_postgresql_connection_string
+
+GROQ_API_KEY=your_groq_api_key
+
+🎯 Future Enhancements
+Authentication & Authorization
+Role-Based Access Control
+Doctor Visit Scheduling
+Email Notifications
+File Upload Support
+Voice-to-Text Interaction Logging
+AI Analytics Dashboard
+Multi-user CRM Support
+PDF Report Generation
+🌟 Key Highlights
+AI-Powered Healthcare CRM Platform
+React + FastAPI Full Stack Architecture
+PostgreSQL Database Integration
+LangGraph Workflow Automation
+Groq LLM Integration
+AI Chat Assistant
+Intelligent Follow-up Email Generator
+AI Interaction Summarization
+Dashboard Analytics
+Responsive Modern UI
+Cloud Deployment Ready
+End-to-End CRUD Operations
+📌 Note
+
+This project uses Render's Free Tier for backend hosting.
+
+The backend automatically enters sleep mode after inactivity. The first AI request may take 30–60 seconds while the service wakes up. During this time, the chatbot displays a loading indicator informing users that the AI service is connecting.
+👨‍💻 Author
+
+Yogi Charan Sharma
+
+Portfolio:
+https://charansharmaportfolio.netlify.app/
+
+LinkedIn:
+https://www.linkedin.com/in/yogi-charan-sharma-235b62282
+
+GitHub:
+https://github.com/yogicharan2828-coder
