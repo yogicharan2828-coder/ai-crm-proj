@@ -87,7 +87,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://charansharmaportfolio.netlify.app/"
+                href="https://yogi-charan-sharma-portfolio.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-slate-300 hover:text-cyan-400 transition-all duration-300"
