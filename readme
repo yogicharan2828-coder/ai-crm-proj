@@ -42,6 +42,35 @@ Mobile-Friendly Design
 Modern Glassmorphism UI
 Smooth User Experience
 
+### 📄 Document & Medical Image Intelligence
+
+- Upload PDF reports for AI analysis
+- Automatic PDF text extraction
+- Upload JPG, JPEG and PNG medical images
+- AI-assisted medical image analysis
+- Multimodal AI workflow for document and image inputs
+- File type and file size validation
+- Support for uploading multiple documents/images in the interface
+- One-document-at-a-time AI analysis for reliable model processing
+- Extracted document context can be passed directly to the AI assistant
+- Uploaded files are processed temporarily for analysis and are not permanently stored
+
+### 🧠 Multimodal AI Assistant
+
+The CRM assistant goes beyond database-based question answering by supporting document and image analysis.
+
+Users can:
+
+- Upload PDF reports and extract their text automatically
+- Upload medical images such as X-rays for AI-assisted visual analysis
+- Ask questions about uploaded documents
+- Ask the AI to summarize extracted reports
+- Combine CRM context with uploaded document context when relevant
+- Analyze images using a vision-capable Groq model
+- Receive structured, conversational responses directly inside the CRM chatbot
+
+The system validates uploaded files before processing and provides user-friendly feedback for unsupported or oversized files.
+
 🛠️ Tech Stack
 Frontend
 React.js
@@ -68,6 +97,14 @@ VS Code
 Netlify
 Render
 Render PostgreSQL
+### Document & AI Processing
+
+- PyPDF
+- PDF Text Extraction
+- Multimodal AI
+- Vision-capable LLM
+- Image Processing
+
 
 📂 Project Structure
 AI-CRM-PROJ/
@@ -110,17 +147,32 @@ AI-CRM-PROJ/
 
 └── README.md
 
-🔍 How It Works
-Medical Representative logs a doctor interaction.
-Interaction details are securely stored in PostgreSQL.
-AI processes the interaction using LangGraph and Groq LLM.
-AI generates:
-Professional Interaction Summary
-Follow-up Email
-Recommended Next Action
-Priority Level
-Dashboard updates in real time.
-AI CRM Assistant answers CRM-related queries using stored database information.
+## 🔍 How It Works
+
+### CRM Interaction Workflow
+
+1. Medical Representative logs a doctor interaction.
+2. Interaction details are validated and stored in PostgreSQL.
+3. LangGraph orchestrates the AI workflow.
+4. Groq LLM generates:
+   - Professional interaction summary
+   - Recommended next action
+   - Follow-up email
+   - Priority level
+5. Dashboard statistics update using the stored CRM data.
+6. The AI CRM Assistant retrieves relevant CRM interaction context to answer user questions.
+
+### Document & Image Analysis Workflow
+
+1. User uploads a PDF or supported medical image through the chatbot.
+2. FastAPI validates the uploaded file.
+3. PDF documents are processed using PDF text extraction.
+4. Images are prepared for multimodal AI analysis.
+5. Relevant document/image context is passed to the vision-capable LLM.
+6. The AI generates an analysis based on the uploaded content.
+7. The result is displayed directly inside the conversational CRM assistant.
+
+Uploaded documents and images are processed temporarily for analysis and are not persisted as CRM records.
 
 ⚙️ Installation
 Clone the repository
@@ -163,11 +215,11 @@ Authentication & Authorization
 Role-Based Access Control
 Doctor Visit Scheduling
 Email Notifications
-File Upload Support
 Voice-to-Text Interaction Logging
 AI Analytics Dashboard
 Multi-user CRM Support
 PDF Report Generation
+
 🌟 Key Highlights
 AI-Powered Healthcare CRM Platform
 React + FastAPI Full Stack Architecture
@@ -181,6 +233,14 @@ Dashboard Analytics
 Responsive Modern UI
 Cloud Deployment Ready
 End-to-End CRUD Operations
+- Multimodal AI Document & Image Analysis
+- PDF Report Text Extraction
+- AI-Assisted Medical Image Analysis
+- Vision-enabled CRM Assistant
+- File Validation & Processing Pipeline
+- Context-Aware AI Responses
+
+
 📌 Note
 
 This project uses Render's Free Tier for backend hosting.
