@@ -9,7 +9,6 @@ import History from "./components/History";
 import ChatInterface from "./components/ChatInterface";
 import Footer from "./components/footer";
 
-
 export default function App() {
   const [refreshKey, setRefreshKey] = useState(0);
 
@@ -49,14 +48,13 @@ export default function App() {
       {/* Interaction History */}
       <section id="history">
         <History refreshKey={refreshKey} />
-          <ChatInterface />
-          <Footer />
       </section>
 
-      {/* AI Chatbot */}
-      
-        
-      
+      {/* Footer */}
+      <Footer />
+
+      {/* Floating AI Chatbot */}
+      <ChatInterface />
 
     </div>
   );
